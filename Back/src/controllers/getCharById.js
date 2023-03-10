@@ -32,11 +32,8 @@ const getCharById = async (req, res) => {
         where: {id: id}
     })
 
-    if(character === null) {
-        throw Error(`The character with id ${id} not exist`)
-    }
-
-            res.status(200).json(character)
+    if(character === null) throw Error(`The character with id ${id} not exist`);
+    res.status(200).json(character);
         
     } catch (err) {
         res.status(500)

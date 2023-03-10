@@ -45,15 +45,15 @@ function App() {
        // mensaje de error
        window.alert("Este personaje ya ha sido añadido");
      } else {
-    fetch(`http://localhost:3001/rickandmorty/character/${character}`)
+        fetch(`http://localhost:3001/rickandmorty/character/${character}`)
     .then((response) => response.json())
     .then((data) => {
-        if (data) {
-          setCharacters((oldChars) => [...oldChars, data]);
-        } else {
+        if (data.message) {
           window.alert("No hay personajes con ese ID");
+        } else {
+          setCharacters((oldChars) => [...oldChars, data]);
         }
-      });
+      });   
     }
   };
 
