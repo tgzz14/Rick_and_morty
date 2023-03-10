@@ -1,0 +1,34 @@
+.App {
+   display: flex; 
+   flex-direction: column; 
+   text-align: center;
+   font-size: 0.7em;
+ 
+}
+
+@media (max-width: 800px){ 
+     .App {
+      font-size: 0.8em;
+     }
+}
+
+@media (max-width: 450px){ 
+   .App {
+    font-size: 0.7em;
+   }
+}
+
+
+@media (max-width: 350px){ 
+   .App {
+    font-size: 0.6em;
+   }
+}
+
+
+
+
+
+
+
+

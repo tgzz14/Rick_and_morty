@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    
+}
+
+.containerTwo {
+    position: relative;
+    width: 200px;
+    background : rgba(255, 255, 255, 0.6); 
+    border-radius: 5px;
+    overflow:hidden;
+    margin: 30px;   
+    margin-top: 70px;
+}
+
+.buttonFav {
+    font-size: 2em;
+    background:transparent;
+    border:none; 
+    left: 5%;
+    position : absolute;
+    z-index: 1;
+}
+
+.button {
+    margin-top : 0.3em;
+    font-size: 1.5em;
+    Background: red;
+    border-radius: 7px;
+    opacity: 0.8;
+    color : white; 
+    border:none; 
+    right: 5%;
+    position : absolute;
+    z-index: 1;
+}
+
+.button > .close {
+    display: none; 
+}
+.button:hover > .x {
+    display: none;
+    
+}
+.button:hover > .close { 
+    display: inline;       
+}
+
+.button:hover {
+    margin-left : 15vw; 
+    opacity: 1;
+}
+
+.img {
+    width: 200px;
+    border-radius: 5px;
+    -webkit-transform:scale(1.7);
+    transform:scale(1.7);
+    overflow:hidden;   
+
+}
+
+.container:hover .img {
+    box-sizing: content-box; 
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    
+
+}
+
+@keyframes name {
+    0% {color: rgb(0, 0, 0);} 
+   25% {color: rgb(14, 0, 62);} 
+   50% {color: rgb(255, 251, 0);} 
+   75% {color: rgb(0, 0, 255);} 
+  100% {color: rgb(255, 0, 0);} 
+}
+
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    color : white; 
+    background : black;
+    opacity : 0.7;  
+}
+
+.nameSpecies {
+    word-spacing: 3em;
+    animation-name: name;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-size: 1.5em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 12px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .container {
+        margin-top: 200px
+}
+
+}

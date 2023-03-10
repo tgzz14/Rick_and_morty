@@ -1,0 +1,23 @@
+.text {
+    margin-top: 100px;
+}
+
+.container {
+    align-self: center;
+}
+
+.button {
+    background : rgb(4, 0, 85); 
+    border-radius: 0.5em;
+    border: none;
+    padding: 5px 32px;
+    color : white; 
+    margin: 10px;
+    width: fit-content;
+    
+}
+
+.button:hover {
+    background : rgb(10, 0, 209); 
+}
+

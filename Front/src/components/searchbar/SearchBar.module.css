@@ -1,0 +1,45 @@
+.button {
+    background : rgb(4, 0, 85); 
+    border-radius: 0.5em;
+    border: none;
+    color : white; 
+    padding: 5px 32px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background : rgb(10, 0, 209); 
+}
+
+.input {
+    padding : 5px 10px;
+    border-radius : 0.5em;
+    border: none;
+    margin-right: 10px;
+    
+}
+
+.input:hover {
+    background : rgba(251, 122, 169, 0.231);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.passChild {
+    position: absolute;
+    color: black; 
+    width: 1em;
+    transform: translate(1500%, 60%);
+}
+
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+    }
+        
+    }
+

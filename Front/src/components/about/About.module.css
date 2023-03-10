@@ -1,0 +1,51 @@
+.container {
+    margin-top: 100px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(240, 248, 255, 0.435);
+    width: fit-content;
+    color: white;
+    border-radius: 5px;
+    overflow:hidden;
+    font-size: 15px;
+}
+
+.text {
+    text-align: left;
+    padding: 5px;
+}
+
+.text2 {
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.img {
+    width: 300px;
+    height: max-content;
+}
+
+@media (max-width: 850px) {
+    .container {
+        margin-top: 300px;
+
+    }
+}
+
+@media (max-width: 750px) {
+    img {
+        align-self: center;
+        border-radius: 5px;
+    }
+    .container {
+        margin-top: 300px;
+        align-self: center;
+        width: 300px
+    }
+
+    .text {
+        align-self: center;
+    }
+    }
