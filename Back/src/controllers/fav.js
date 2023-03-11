@@ -5,7 +5,7 @@ const {
 
 const getFav = async (req, res) => {
 try {
-  const fav = await Favorites.findAll()
+  const fav = await Favorite.findAll()
   if(fav === null) throw Error(`you don't Have favorites's characters`)
   res.status(200).json(fav);
   
@@ -54,7 +54,7 @@ const deleteFav = async (req, res) => {
     })
     
     if(findChar === null) throw Error("not found this character");
-    res.status(200).send(`deleted this character's id ${id}`)
+    res.status(200).send(`deleted this character's id ${id} successfully`)
 
   } catch (error) {
     res.status(400).json({
