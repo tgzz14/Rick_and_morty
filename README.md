@@ -17,5 +17,5 @@
 
 #
 ### Pasos para correr el proyecto:
-[x] Comienza por instalar todas las dependencias ejecutando el comando npm install tanto en la carpeta "back" como en la carpeta "front-end".
-[x] A continuación, levanta el servidor local ejecutando el comando npm start en la carpeta "back-end" y luego en la carpeta "front-end".
+- [x] Comienza por instalar todas las dependencias ejecutando el comando npm install tanto en la carpeta "back" como en la carpeta "front-end".
+- [x] A continuación, levanta el servidor local ejecutando el comando npm start en la carpeta "back-end" y luego en la carpeta "front-end".
